@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: machine-ip
+  labels:
+    app: machine-ip
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: machine-ip
+      labels:
+        app: machine-ip
+    spec:
+      containers:
+        - name: machine-ip
+          image: incrediblevicky/machine-ip:0.0.1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: machine-ip
