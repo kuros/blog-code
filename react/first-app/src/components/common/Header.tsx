@@ -8,6 +8,7 @@ const Header: FunctionComponent = () => {
     return (
         <nav className='space'>
             <NavLink to='/' activeStyle={activeStyle}  exact >Home</NavLink> { " | "}
+            <NavLink to='/books' activeStyle={activeStyle} >Books</NavLink> { " | "}
             <NavLink to='/about' activeStyle={activeStyle} >About</NavLink>
         </nav>
     )

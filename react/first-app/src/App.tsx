@@ -6,6 +6,7 @@ import AboutPage from "./components/about/AboutPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./components/common/Header";
 import NotFoundPage from "./NotFoundPage";
+import BookPage from "./components/book/BookPage";
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
                 <Switch>
                     <Route exact path='/' component={HomePage}/>
                     <Route path='/about' component={AboutPage}/>
+                    <Route path='/books' component={BookPage}/>
                     <Route component={NotFoundPage}/>
                 </Switch>
             </div>
