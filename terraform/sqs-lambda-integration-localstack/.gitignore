@@ -1,0 +1,12 @@
+.idea/
+**.iml
+target/
+build/
+dist/
+.gradle/
+.terraform/
+**.tfstate
+.pytest_cache
+__pycache__
+**.pyc
+**.swp
