@@ -10,3 +10,7 @@ dist/
 __pycache__
 **.pyc
 **.swp
+.terraform
+.terraform.lock.hcl
+*.tfstate*
+lambda_function.zip
