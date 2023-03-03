@@ -31,7 +31,7 @@ resource "aws_lambda_function" "lambda" {
   role             = aws_iam_role.iam_for_lambda_fix.arn
   handler          = "./index.handler"
   source_code_hash = "${filebase64sha256("./index.js")}"
-  runtime          = "nodejs16.x"
+  runtime          = "nodejs18.x"
   timeout = 30
 
   depends_on = [data.archive_file.lambda_zip]
